@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "166566026141",
+    "project_id": "ml-model-30157",
+    "storage_bucket": "ml-model-30157.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:166566026141:android:34057bce6b23bec042ed74",
+        "android_client_info": {
+          "package_name": "com.example.ml_model_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPjmE88U3BwyUqbDQqmVw9O1KYyf4dDZg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
