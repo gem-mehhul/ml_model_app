@@ -4,7 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:video_player/video_player.dart';
 
 class VideoPlayer extends StatefulWidget {
- final String movieLink;
+  final String movieLink;
   VideoPlayer({key, required this.movieLink});
 
   @override
@@ -20,7 +20,6 @@ class _VideoPlayerState extends State<VideoPlayer> {
   void initState() {
     initializeVideo(widget.movieLink);
     //AddAnswerBloc.dispose();
-    // TODO: implement initState
     super.initState();
   }
 
@@ -35,7 +34,6 @@ class _VideoPlayerState extends State<VideoPlayer> {
     }
 
     // videoPlayerController.removeListener();
-    // TODO: implement dispose
     super.dispose();
   }
 
@@ -67,8 +65,12 @@ class _VideoPlayerState extends State<VideoPlayer> {
 
   @override
   Widget build(BuildContext context) {
-    return WillPopScope(
-      onWillPop: () async => true,
+    return PopScope(
+      onPopInvoked: (didPop) {
+        if (didPop) {
+          SystemNavigator.pop();
+        }
+      },
       child: Scaffold(
           body: Center(
         child: videoPlayerController.value.isInitialized

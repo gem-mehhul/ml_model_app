@@ -38,7 +38,7 @@ dependencies:
   firebase_storage: ^11.6.5
   chewie: ^1.7.5
   video_player: ^2.6.0
-  fijkplayer: ^0.10.0
+  tflite_flutter: ^0.10.4
 
 dev_dependencies:
   flutter_test:
@@ -60,6 +60,9 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+  assets:
+    - assets/predData.tflite
+  #  - assets/Img.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:
